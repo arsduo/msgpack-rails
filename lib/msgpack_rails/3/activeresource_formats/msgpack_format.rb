@@ -14,7 +14,7 @@ module ActiveResource
       # Options hash currently serves no function.
       # TODO:  Fix it, duh.  Just like the Serializer's issue
       def encode(hash, options = nil)
-        hash.to_msgpack
+        hash.to_msgpack(options)
       end
 
       def decode(mpac)
