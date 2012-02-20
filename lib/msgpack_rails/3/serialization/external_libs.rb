@@ -3,13 +3,7 @@
 # to integrate support for msgpack
 
 if defined?(BSON)
-  module BSON
-    class ObjectId
-      def to_msgpack(options = nil)
-        to_s.to_msgpack(options)
-      end
-    end
-  end
+  BSON::ObjectId.send(:include, MessagePack::SimpleSerialization)
 end
 
 if defined?(CarrierWave)
