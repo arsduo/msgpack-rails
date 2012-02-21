@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Rails gem to utilize msgpack for serializing and deserializing"
   s.description = "For more information see the README."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.markdown"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 2.3.5"
