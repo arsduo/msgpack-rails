@@ -1,3 +1,5 @@
+require 'mime/types'
+
 Mime::Type.register "application/x-mpac", :mpac, %w( application/x-msgpack )
 
 # Let's action_dispatch parse the params into the params hash when it receives an mpac request.

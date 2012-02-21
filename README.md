@@ -2,13 +2,17 @@
 
 Uses the fast and compact [msgpack](https://github.com/msgpack/msgpack 'MessagePack') binary format to let you serialize objects.
 
+Huge thanks to nzifnab, who originally wrote this library.
+
 ##  Installation
 
 In your Gemfile include the following line:
 
-    gem 'msgpack-rails', :git => 'git://github.com/nzifnab/msgpack-rails.git'
+    gem 'msgpack-rails', :git => 'git://github.com/arsduo/msgpack-rails.git'
 
 ## Usage
+
+###Needs to be updated###
 
 To encode objects use [msgpack's](https://github.com/msgpack/msgpack 'MessagePack') `to_msgpack` method:
 
