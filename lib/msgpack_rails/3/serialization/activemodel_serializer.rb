@@ -5,7 +5,12 @@ module ActiveModel
         options = {:out => options} if options.is_a?(String)
         options[:out] ||= ''
 
-        options[:out] << as_json(options).to_msgpack
+        puts "Out: #{options[:out].inspect}"
+        puts "Out: #{options[:out].encoding}"
+        options[:out].force_encoding("ASCII-8BIT")
+        puts "Out encoding: #{options[:out].encoding}"
+
+        options[:out] << as_json(options).to_msgpack.tap{|d| puts "done with this: #{d.encoding}"}
       end
       alias_method :to_mpac, :to_msgpack
 
